@@ -2,69 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .profile-container {
-            width: 400px;
-            margin: 50px auto;
             background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            margin: 20px;
         }
 
-        .profile-pic {
-            width: 120px;
-            height: 120px;
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #4CAF50;
-            margin-bottom: 15px;
+            border: 3px solid #007bff;
         }
 
-        .user-name {
+        .profile-header h1 {
+            margin: 10px 0;
             font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .user-bio {
-            color: #777;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .user-info {
-            text-align: left;
-            font-size: 14px;
             color: #333;
         }
 
-        .user-info p {
-            margin: 8px 0;
+        .profile-header p {
+            color: #777;
+            font-size: 16px;
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+        }
+
+        .profile-info h2 {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <div class="profile-container">
-        <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-pic">
-        <div class="user-name">John Doe</div>
-        <div class="user-bio">Web Developer | Tech Enthusiast | Blogger</div>
-        <div class="user-info">
-            <p><strong>Email:</strong> john.doe@example.com</p>
-            <p><strong>Location:</strong> New York, USA</p>
-            <p><strong>Phone:</strong> +1 234 567 890</p>
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            <h1>John Doe</h1>
+            <p>Software Developer | Tech Enthusiast</p>
+        </div>
+        <div class="profile-info">
+            <h2>About Me</h2>
+            <p>Hi, I'm John! I'm a passionate software developer with over 5 years of experience in building web
+                applications. I love exploring new technologies and sharing knowledge with the community.</p>
+        </div>
+        <div class="profile-info">
+            <h2>Contact Information</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>Location: San Francisco, CA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
         </div>
     </div>
 </body>
